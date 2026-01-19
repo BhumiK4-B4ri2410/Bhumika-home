@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills | Bhumika Bari</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Skills</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Contact </h2>
+        <div class="skill-bar">
+            <span>+91 99813 48106</span>
+            <div class="bar"><div class="fill" style="width: 50%"></div></div>
+        </div>
+        <div class="skill-bar">
+            <span>baribhumika9@gmail.com</span>
+            <div class="bar"><div class="fill" style="width: 55%"></div></div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Bhumika Bari
+</footer>
+
+<script>
+const sections = document.querySelectorAll('section');
+
+window.addEventListener('scroll', () => {
+  const triggerBottom = window.innerHeight / 5 * 4;
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if(sectionTop < triggerBottom) {
+      section.classList.add('visible');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
